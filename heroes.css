@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+}
+
+.hero {
+  background-image: url('img6006.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+ul {
+  display: flex;
+  gap: 7px;
+  list-style: none;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  color: white;
+  margin-top: 20px;
+}
+
+.cl {
+  color: #D2AC47;
+}
+
+p {
+  color: white;
+  margin-top: 15px;
+}
+
+button {
+  border-radius: 12px;
+  padding: 8px 16px;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.me {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+
+.stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 4px 10px 4px 4px;
+}
+
+.stat img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.stat div {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  color: white;
+  font-weight: bold;
+}
+
+.stat-label {
+  color: white;
+  font-size: 13px;
+}
+.featured {
+  padding: 50px 20px;
+  background: white;
+  overflow: hidden;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.section-header h2 {
+  font-size: 28px;
+  color: #1a1a1a;
+  font-weight: 700;
+}
+
+.section-header h2 span {
+  color: #D2AC47;
+}
+
+.gold-line {
+  width: 60px;
+  height: 3px;
+  background: #D2AC47;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.scroll-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: scrollLeft 18s linear infinite;
+}
+
+@keyframes scrollLeft {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.card {
+  width: 260px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.10);
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 1px solid #f0e8d0;
+}
+
+.card-img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.card-body { padding: 14px; }
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.category {
+  font-size: 11px;
+  font-weight: 600;
+  color: #D2AC47;
+  text-transform: uppercase;
+}
+
+.badge {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.badge.rent {
+  background: #fff4e0;
+  color: #D2AC47;
+  border: 1px solid #D2AC47;
+}
+
+.badge.sale {
+  background: #1a1a1a;
+  color: white;
+}
+
+.card-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+}
+
+.card-location {
+  font-size: 12px;
+  color: #888;
+}
+
+.card-footer {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid #f0e8d0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 15px;
+  font-weight: 700;
+  color: #D2AC47;
+}
+
+.details { font-size: 11px; color: #aaa; }
+.search-section {
+  background: white;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-box {
+  background: white;
+  border: 2px solid #D2AC47;
+  border-radius: 16px;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 4px 20px rgba(210,172,71,0.15);
+}
+
+.search-box h3 {
+  font-size: 16px;
+  color: #1a1a1a;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.search-box h3 span {
+  color: #D2AC47;
+}
+
+.search-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.search-filters select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #e0d5b5;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #1a1a1a;
+  background: #fffdf5;
+  appearance: none;
+  outline: none;
+}
+
+.search-filters select:focus {
+  border-color: #D2AC47;
+}
+
+.search-btn {
+  width: 100%;
+  padding: 12px;
+  background: #D2AC47;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+.search-btn:active {
+  background: #b8932e;
+}
+.categories {
+  padding: 40px 20px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 40px 0;  /* remove left and right padding */
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cat-card {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  height: 160px;
+  border-radius: 0;  /* remove border radius so it touches edges */
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.cat-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cat-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.6) 0%,
+    rgba(0,0,0,0.2) 100%
+  );
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+}
+
+.cat-label {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.cat-label span {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  color: #D2AC47;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.agents {
+  padding: 50px 20px;
+  background: white;
+  text-align: center;
+}
+
+.agents-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.agents-header h2 span {
+  color: #D2AC47;
+}
+
+.agents-header .gold-line {
+  margin-bottom: 40px;
+}
+
+.agents-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.agent-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.agent-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #D2AC47;
+  box-shadow: 0 6px 20px rgba(210,172,71,0.25);
+}
+
+.agent-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.agent-title {
+  font-size: 12px;
+  color: #D2AC47;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
