@@ -122,6 +122,7 @@ button {
   gap: 20px;
   width: max-content;
   animation: scrollLeft 18s linear infinite;
+  background: white;
 }
 
 @keyframes scrollLeft {
